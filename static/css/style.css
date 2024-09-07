@@ -1,0 +1,52 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	gap: 20px;
+}
+
+.box {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#camera-box {
+position: relative;
+width: 640px;
+height: 480px;
+overflow: hidden;
+}
+
+#camera-feed {
+width: 100%;
+height: auto;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.info-item {
+	font-size: 18px;
+	color: #333;
+}
+
+.suspicion {
+	font-size: 18px;
+	color: red;
+}

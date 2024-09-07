@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Face and Audio Analysis</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Face and Audio Analysis</h1>
+<button onclick="saveImage('friend')">Save Image as Friend</button>
+<button onclick="saveImage('enemy')">Save Image as Enemy</button>
+<button onclick="recordAudio()">Record Audio</button>
+<button onclick="analyzeImage()">Analyze Image</button>
+<button onclick="analyzeAudio()">Analyze Audio</button>
+
+<div id="output">
+<h2>Image Analysis</h2>
+<img id="image" src="" alt="Captured Image">
+<p id="image-analysis"></p>
+<h2>Audio Analysis</h2>
+<img id="audio-spectrum" src="" alt="Audio Spectrum">
+<p id="audio-analysis"></p>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
