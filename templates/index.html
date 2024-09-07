@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Face Analysis</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1>Real-Time Face Analysis</h1>
+<div class="container">
+<div id="camera-box" class="box">
+<img id="camera-feed" src="{{ url_for('video_feed') }}" alt="Camera Feed">
+<div id="data-overlay"></div>
+</div>
+<div class="box info-box">
+<div class="info-item">Distance: <span id="distance">N/A</span></div>
+<div class="info-item">FPS: <span id="fps">N/A</span></div>
+<div class="info-item">Suspicion Level: <span class="suspicion" id="suspicion">Normal</span></div>
+<div class="info-item">Surroundings: <span id="surroundings">Clear</span></div>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
